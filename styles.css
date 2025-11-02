@@ -1,0 +1,568 @@
+/* IntimaLabs - Innovation & Technology Solutions */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1f2937;
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+    max-width: 700px;
+    padding: 2rem;
+    z-index: 2;
+    position: relative;
+}
+
+.logo {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #5fb3b3 0%, #4a90a4 20%, #3d6db3 40%, #4c5cc7 60%, #6366f1 80%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+    color: #6b7280;
+    letter-spacing: 0.5px;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    color: #374151;
+}
+
+.coming-soon {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, rgba(78, 205, 196, 0.1), rgba(139, 92, 246, 0.1));
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(78, 205, 196, 0.3);
+    display: inline-block;
+    box-shadow: 0 8px 32px rgba(78, 205, 196, 0.1);
+    color: #374151;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.feature {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(78, 205, 196, 0.1), rgba(139, 92, 246, 0.1));
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(78, 205, 196, 0.2);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(78, 205, 196, 0.15);
+    border-color: rgba(78, 205, 196, 0.4);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4ecdc4;
+}
+
+.feature h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #374151;
+}
+
+.feature h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #374151;
+}
+
+.feature-link {
+    color: #374151;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.feature-link:hover {
+    color: #4ecdc4;
+    text-decoration: underline;
+}
+
+.feature p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    line-height: 1.4;
+    color: #6b7280;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #374151;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, rgba(78, 205, 196, 0.1), rgba(139, 92, 246, 0.1));
+    border-radius: 25px;
+    border: 1px solid rgba(78, 205, 196, 0.25);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.social-link:hover {
+    background: linear-gradient(135deg, rgba(78, 205, 196, 0.2), rgba(139, 92, 246, 0.2));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(78, 205, 196, 0.2);
+    border-color: rgba(78, 205, 196, 0.4);
+    color: #1f2937;
+}
+
+.social-link i {
+    font-size: 1.2rem;
+}
+
+.contact {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(78, 205, 196, 0.1), rgba(139, 92, 246, 0.1));
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(78, 205, 196, 0.2);
+    box-shadow: 0 8px 32px rgba(78, 205, 196, 0.05);
+}
+
+.contact h3 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #374151;
+}
+
+.email {
+    color: #374151;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.email:hover {
+    color: #4ecdc4;
+}
+
+/* Roadmap Section */
+.roadmap {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.roadmap h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #374151;
+    background: linear-gradient(90deg, #5fb3b3 0%, #4a90a4 20%, #3d6db3 40%, #4c5cc7 60%, #6366f1 80%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.roadmap h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #374151;
+    background: linear-gradient(90deg, #5fb3b3 0%, #4a90a4 20%, #3d6db3 40%, #4c5cc7 60%, #6366f1 80%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(78, 205, 196, 0.05), rgba(139, 92, 246, 0.05));
+    border-radius: 15px;
+    border: 1px solid rgba(78, 205, 196, 0.15);
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.timeline-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(78, 205, 196, 0.1);
+    border-color: rgba(78, 205, 196, 0.3);
+}
+
+.timeline-date {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4ecdc4;
+    background: linear-gradient(135deg, rgba(78, 205, 196, 0.1), rgba(139, 92, 246, 0.1));
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid rgba(78, 205, 196, 0.2);
+    white-space: nowrap;
+    min-width: 80px;
+}
+
+.timeline-content {
+    flex: 1;
+}
+
+.timeline-content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    font-size: 0.9rem;
+    color: #6b7280;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Animated background elements */
+.bg-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.floating-shape {
+    position: absolute;
+    background: linear-gradient(135deg, rgba(78, 205, 196, 0.05), rgba(139, 92, 246, 0.05));
+    border-radius: 50%;
+    animation: float 8s ease-in-out infinite;
+    border: 1px solid rgba(78, 205, 196, 0.1);
+}
+
+.shape1 {
+    width: 120px;
+    height: 120px;
+    top: 15%;
+    left: 8%;
+    animation-delay: 0s;
+}
+
+.shape2 {
+    width: 80px;
+    height: 80px;
+    top: 70%;
+    right: 12%;
+    animation-delay: 3s;
+}
+
+.shape3 {
+    width: 100px;
+    height: 100px;
+    bottom: 15%;
+    left: 15%;
+    animation-delay: 6s;
+}
+
+.shape4 {
+    width: 60px;
+    height: 60px;
+    top: 40%;
+    right: 20%;
+    animation-delay: 1.5s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translateY(-30px) rotate(180deg);
+        opacity: 0.7;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem 0;
+        align-items: flex-start;
+        min-height: auto;
+    }
+    
+    .container {
+        padding: 1rem;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    
+    .logo {
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.3;
+        padding: 0 0.5rem;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 1.5rem 0;
+    }
+    
+    .feature {
+        padding: 1.5rem;
+        text-align: center;
+    }
+    
+    .feature h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .feature p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    .roadmap {
+        margin: 2.5rem 0;
+    }
+    
+    .roadmap h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .timeline {
+        gap: 1.5rem;
+        padding: 0 0.5rem;
+        max-width: 100%;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        padding: 1.5rem 1rem;
+    }
+    
+    .timeline-date {
+        align-self: center;
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+        min-width: auto;
+    }
+    
+    .timeline-content h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .timeline-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    .social-links {
+        gap: 1rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .social-link {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+        min-width: 140px;
+        flex: 0 1 auto;
+    }
+    
+    .contact {
+        margin-top: 1.5rem;
+        padding: 1.2rem;
+    }
+    
+    .contact h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .email {
+        font-size: 0.95rem;
+    }
+    
+    .floating-shape {
+        opacity: 0.3;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        align-items: flex-start;
+        min-height: auto;
+        padding: 0.5rem 0;
+    }
+    
+    .container {
+        padding: 0.8rem;
+        max-width: 98%;
+        margin: 0 auto;
+    }
+    
+    .logo {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .tagline {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+        padding: 0 0.2rem;
+    }
+    
+    .feature {
+        padding: 1.2rem 0.8rem;
+    }
+    
+    .feature h3 {
+        font-size: 1.1rem;
+    }
+    
+    .feature p {
+        font-size: 0.9rem;
+    }
+    
+    .roadmap {
+        margin: 2rem 0;
+    }
+    
+    .roadmap h3 {
+        font-size: 1.2rem;
+    }
+    
+    .timeline {
+        padding: 0;
+    }
+    
+    .timeline-item {
+        padding: 1.2rem 0.8rem;
+        margin: 0 0.2rem;
+    }
+    
+    .timeline-date {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+    
+    .timeline-content h4 {
+        font-size: 1rem;
+    }
+    
+    .timeline-content p {
+        font-size: 0.9rem;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    
+    .social-link {
+        width: 180px;
+        justify-content: center;
+        padding: 0.7rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .contact {
+        padding: 1rem;
+        margin: 1rem 0.2rem 0;
+    }
+    
+    .floating-shape {
+        display: none;
+    }
+}
