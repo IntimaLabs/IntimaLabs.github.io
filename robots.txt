@@ -1,9 +1,27 @@
 User-agent: *
 Allow: /
+Allow: /Assets/
+
+# Block access to sensitive files
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /*.log
+Disallow: /package*.json
+
+# Allow specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
 
 # Sitemap
 Sitemap: https://www.intimalabs.com/sitemap.xml
 Sitemap: https://intimalabs.com/sitemap.xml
 
-# Crawl-delay (optional - helps prevent server overload)
+# Crawl-delay (helps prevent server overload)
 Crawl-delay: 1
+
+# Host directive
+Host: www.intimalabs.com
