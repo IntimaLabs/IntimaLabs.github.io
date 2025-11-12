@@ -1,34 +1,36 @@
 # IntimaLabs
 
-**Innovation & Technology Solutions**
+**Building affiliate marketing ecosystems for the financial and retail sectors**
 
-Welcome to the official repository for IntimaLabs' corporate website. We are a technology company focused on building innovative digital products and solutions across multiple industries.
+Welcome to the official repository for IntimaLabs' corporate website. We are a technology company focused on building innovative affiliate marketing platforms and solutions.
 
 ## 🚀 About IntimaLabs
 
-IntimaLabs is dedicated to creating cutting-edge technology solutions that solve real-world problems. Our mission is to develop digital products that make a meaningful impact across various sectors including financial technology, wellness, and emerging markets.
+IntimaLabs builds affiliate marketing ecosystems for the financial and retail sectors. Our mission is to create platforms that connect consumers with the best products and services through expert reviews and recommendations.
 
 ### Our Focus Areas
-- **Financial Technology**: Building platforms that democratize access to financial services
-- **Digital Innovation**: Creating user-centric solutions for modern challenges
-- **Technology Solutions**: Developing scalable platforms for various industries
+- **Financial Services**: Affiliate platforms for credit cards, banking, and investment products
+- **Smart Home & Robotics**: Product reviews and recommendations for home automation
+- **Digital Marketing**: Building scalable affiliate marketing solutions
 
-## 🌐 Current Projects
+## 🌐 Our Platforms
+
+### ApartmentRobots.com
+Home robotics and smart home technology reviews and recommendations.
+
+**Website**: [apartmentrobots.com](https://www.apartmentrobots.com)
 
 ### SmartAllyFinancial
-Our flagship financial review platform providing expert analysis of:
+Financial product reviews and recommendations including:
 - Credit cards and banking products
 - Investment applications and platforms
 - Financial services and tools
 
 **Website**: [smartallyfinancial.com](https://www.smartallyfinancial.com)
 
-## 📅 Roadmap 2026
+## 📅 Our Mission
 
-- **Q1 2026**: Platform Development & Infrastructure
-- **Q2 2026**: SmartAllyFinancial Market Launch
-- **Q3 2026**: Feature Expansion & Tool Development
-- **Q4 2026**: Growth, Scale & New Product Lines
+Building affiliate marketing ecosystems for the financial and retail sectors through expert content, product reviews, and consumer-focused recommendations.
 
 ## 🛠 Technical Stack
 
