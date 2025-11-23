@@ -297,6 +297,43 @@
                 padding: 1rem;
                 padding-bottom: 8rem;
             }
+            .theme-toggle {
+                position: fixed;
+                top: auto;
+                bottom: 0.5rem;
+                right: auto;
+                left: 8.5rem;
+                background: transparent;
+                border: none;
+                border-radius: 0;
+                width: auto;
+                height: auto;
+                box-shadow: none;
+                padding: 0;
+            }
+            .theme-toggle:hover {
+                transform: none;
+                box-shadow: none;
+            }
+            .theme-toggle svg {
+                width: 20px;
+                height: 20px;
+                fill: #718096;
+                transition: fill 0.3s ease;
+            }
+            .theme-toggle:hover svg {
+                fill: #2d3748;
+            }
+            body.dark-mode .theme-toggle {
+                background: transparent;
+                border: none;
+            }
+            body.dark-mode .theme-toggle svg {
+                fill: #a0a0a0;
+            }
+            body.dark-mode .theme-toggle:hover svg {
+                fill: #e5e5e5;
+            }
             .header {
                 margin-bottom: 2rem;
             }
