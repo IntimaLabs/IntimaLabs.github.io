@@ -1,3 +1,4 @@
+# robots.txt for IntimaLabs
 User-agent: *
 Allow: /
 Allow: /Assets/
@@ -5,23 +6,22 @@ Allow: /Assets/
 # Block access to sensitive files
 Disallow: /.git/
 Disallow: /.github/
-Disallow: /node_modules/
-Disallow: /*.log
-Disallow: /package*.json
 
-# Allow specific bots
+# Allow all major search engine bots
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
 # Sitemap
-Sitemap: https://www.intimalabs.com/sitemap.xml
-Sitemap: https://intimalabs.com/sitemap.xml
+Sitemap: https://intimalabs.github.io/sitemap.xml
 
 # Crawl-delay (helps prevent server overload)
 Crawl-delay: 1
-
-# Host directive
-Host: www.intimalabs.com

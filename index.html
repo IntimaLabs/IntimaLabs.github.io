@@ -3,13 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
     <title>IntimaLabs - Affiliate Marketing Ecosystems | Financial & Retail Sectors</title>
+    <meta name="title" content="IntimaLabs - Affiliate Marketing Ecosystems | Financial & Retail Sectors">
     <meta name="description" content="IntimaLabs builds affiliate marketing ecosystems for the financial and retail sectors. Home of Smart Ally Financial and Apartment Robots platforms.">
-    <link rel="icon" type="image/png" sizes="32x32" href="Assets/symbol.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Assets/symbol.png">
+    <meta name="keywords" content="affiliate marketing, financial services, retail technology, smart home automation, financial product reviews, credit cards, banking, investment products, apartment robots, smart ally financial">
+    <meta name="author" content="IntimaLabs">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://intimalabs.github.io/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://intimalabs.github.io/">
+    <meta property="og:title" content="IntimaLabs - Affiliate Marketing Ecosystems">
+    <meta property="og:description" content="Building affiliate marketing ecosystems for the financial and retail sectors. Home of Smart Ally Financial and Apartment Robots.">
+    <meta property="og:image" content="https://intimalabs.github.io/Assets/symbol.png">
+    <meta property="og:site_name" content="IntimaLabs">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://intimalabs.github.io/">
+    <meta name="twitter:title" content="IntimaLabs - Affiliate Marketing Ecosystems">
+    <meta name="twitter:description" content="Building affiliate marketing ecosystems for the financial and retail sectors. Home of Smart Ally Financial and Apartment Robots.">
+    <meta name="twitter:image" content="https://intimalabs.github.io/Assets/symbol.png">
+    <meta name="twitter:site" content="@IntimaLabs">
+    <meta name="twitter:creator" content="@IntimaLabs">
+    
+    <!-- Favicon - Browser Support -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-browser.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-browser.png">
     <link rel="apple-touch-icon" sizes="180x180" href="Assets/symbol.png">
-    <link rel="shortcut icon" href="Assets/symbol.png">
+    <link rel="shortcut icon" href="favicon-browser.png">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#f2f2f2" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "IntimaLabs",
+      "url": "https://intimalabs.github.io",
+      "logo": "https://intimalabs.github.io/Assets/symbol.png",
+      "description": "Building affiliate marketing ecosystems for the financial and retail sectors",
+      "sameAs": [
+        "https://www.instagram.com/intima_labs/",
+        "https://x.com/IntimaLabs",
+        "https://www.linkedin.com/company/intimalabs/",
+        "https://github.com/IntimaLabs"
+      ],
+      "foundingDate": "2024",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "url": "https://intimalabs.github.io"
+      }
+    }
+    </script>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -22,6 +84,50 @@
             background: #f2f2f2;
             padding: 2rem;
             padding-bottom: 12rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        body.dark-mode {
+            background: #1a1a1a;
+            color: #e5e5e5;
+        }
+        .theme-toggle {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .theme-toggle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .theme-toggle svg {
+            width: 24px;
+            height: 24px;
+            fill: #2d3748;
+        }
+        body.dark-mode .theme-toggle {
+            background: #2a2a2a;
+            border: 1px solid #3a3a3a;
+        }
+        body.dark-mode .theme-toggle svg {
+            fill: #e5e5e5;
+        }
+        @media (prefers-color-scheme: dark) {
+            body:not(.light-mode) {
+                background: #1a1a1a;
+                color: #e5e5e5;
+            }
         }
         .container {
             width: 100%;
@@ -57,6 +163,20 @@
             margin-bottom: 3rem;
             font-weight: 400;
         }
+        body.dark-mode h1 {
+            color: #e5e5e5;
+        }
+        body.dark-mode .tagline {
+            color: #a0a0a0;
+        }
+        @media (prefers-color-scheme: dark) {
+            body:not(.light-mode) h1 {
+                color: #e5e5e5;
+            }
+            body:not(.light-mode) .tagline {
+                color: #a0a0a0;
+            }
+        }
         .platforms {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -75,6 +195,24 @@
         .platform-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+        body.dark-mode .platform-card {
+            background: #2a2a2a;
+            border: 1px solid #3a3a3a;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        body.dark-mode .platform-card:hover {
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+        }
+        @media (prefers-color-scheme: dark) {
+            body:not(.light-mode) .platform-card {
+                background: #2a2a2a;
+                border: 1px solid #3a3a3a;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            }
+            body:not(.light-mode) .platform-card:hover {
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+            }
         }
         .platform-logo {
             height: 60px;
@@ -100,6 +238,20 @@
             color: #718096;
             text-align: center;
             line-height: 1.5;
+        }
+        body.dark-mode .platform-name {
+            color: #e5e5e5;
+        }
+        body.dark-mode .platform-description {
+            color: #a0a0a0;
+        }
+        @media (prefers-color-scheme: dark) {
+            body:not(.light-mode) .platform-name {
+                color: #e5e5e5;
+            }
+            body:not(.light-mode) .platform-description {
+                color: #a0a0a0;
+            }
         }
         .social-links {
             position: fixed;
@@ -131,6 +283,14 @@
             left: 2rem;
             color: #718096;
             font-size: 0.75rem;
+        }
+        body.dark-mode footer {
+            color: #a0a0a0;
+        }
+        @media (prefers-color-scheme: dark) {
+            body:not(.light-mode) footer {
+                color: #a0a0a0;
+            }
         }
         @media (max-width: 768px) {
             body {
@@ -185,6 +345,10 @@
     </style>
 </head>
 <body>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm0-10c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zM13 2h-2v3h2V2zm0 17h-2v3h2v-3zM5 11H2v2h3v-2zm17 0h-3v2h3v-2zM6.3 4.9L4.9 6.3l2.1 2.1 1.4-1.4-2.1-2.1zM19.1 17.7l-1.4 1.4-2.1-2.1 1.4-1.4 2.1 2.1zM19.1 6.3l-2.1 2.1 1.4 1.4 2.1-2.1-1.4-1.4zM6.3 19.1l2.1-2.1-1.4-1.4-2.1 2.1 1.4 1.4z"/></svg>
+        <svg class="moon-icon" style="display:none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 11.807C10.7418 10.5483 9.88488 8.94484 9.53762 7.1993C9.19037 5.45375 9.36832 3.64444 10.049 2C8.10826 2.38205 6.3256 3.33431 4.92899 4.735C1.02399 8.64 1.02399 14.972 4.92899 18.877C8.83499 22.783 15.166 22.782 19.071 18.877C20.4717 17.4805 21.4240 15.6983 21.807 13.758C20.1625 14.4385 18.3533 14.6164 16.6077 14.2692C14.8622 13.9219 13.2588 13.0651 12 11.807V11.807Z"/></svg>
+    </button>
     <div class="container">
         <div class="header">
             <img src="Assets/symbol.png" alt="IntimaLabs" class="logo">
@@ -197,14 +361,14 @@
                     <img src="Assets/symbol-black.PNG" alt="Apartment Robots">
                 </div>
                 <h2 class="platform-name">Apartment Robots</h2>
-                <p class="platform-description">Home robotics and smart home technology</p>
+                <p class="platform-description">Smart home automation and robotics for modern living</p>
             </a>
             <a href="https://www.smartallyfinancial.com" class="platform-card" target="_blank" rel="noopener noreferrer">
                 <div class="platform-logo">
                     <img src="Assets/SmartAllyFinancial Color - no background.png" alt="Smart Ally Financial">
                 </div>
                 <h2 class="platform-name">Smart Ally Financial</h2>
-                <p class="platform-description">Financial product reviews and recommendations</p>
+                <p class="platform-description">Insights on credit cards, banking, and investment products</p>
             </a>
         </div>
     </div>
@@ -225,5 +389,57 @@
     <footer>
         <p>&copy; 2025 IntimaLabs</p>
     </footer>
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const sunIcon = document.querySelector('.sun-icon');
+        const moonIcon = document.querySelector('.moon-icon');
+        const body = document.body;
+
+        // Function to set theme
+        function setTheme(theme) {
+            if (theme === 'dark') {
+                body.classList.add('dark-mode');
+                body.classList.remove('light-mode');
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+            } else {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+            }
+        }
+
+        // Check for saved theme preference or default to system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (savedTheme) {
+            // Use saved preference
+            setTheme(savedTheme);
+        } else if (systemPrefersDark) {
+            // Use system preference
+            setTheme('dark');
+        } else {
+            // Default to light
+            setTheme('light');
+        }
+
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            const isDark = body.classList.contains('dark-mode');
+            const newTheme = isDark ? 'light' : 'dark';
+            setTheme(newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            // Only update if user hasn't manually set a preference
+            if (!localStorage.getItem('theme')) {
+                setTheme(e.matches ? 'dark' : 'light');
+            }
+        });
+    </script>
 </body>
 </html>
