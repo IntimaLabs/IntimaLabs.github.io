@@ -20,14 +20,6 @@ Home robotics and smart home technology reviews and recommendations.
 
 **Website**: [apartmentrobots.com](https://www.apartmentrobots.com)
 
-### SmartAllyFinancial
-Financial product reviews and recommendations including:
-- Credit cards and banking products
-- Investment applications and platforms
-- Financial services and tools
-
-**Website**: [smartallyfinancial.com](https://www.smartallyfinancial.com)
-
 ## 📅 Our Mission
 
 Building affiliate marketing ecosystems for the financial and retail sectors through expert content, product reviews, and consumer-focused recommendations.
