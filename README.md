@@ -2,7 +2,7 @@
 
 **Building affiliate marketing ecosystems for the retail sector**
 
-Welcome to the official repository for IntimaLabs' corporate website. We are a technology company focused on building innovative affiliate marketing platforms and solutions.
+Welcome to the official repository for IntimaLabs corporate website. We are a technology company focused on building innovative affiliate marketing platforms and solutions.
 
 ## 🚀 About IntimaLabs
 
