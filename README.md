@@ -1,28 +1,28 @@
 # IntimaLabs
 
-**Building affiliate marketing ecosystems for the financial and retail sectors**
+**Building affiliate marketing ecosystems for the retail sector**
 
 Welcome to the official repository for IntimaLabs' corporate website. We are a technology company focused on building innovative affiliate marketing platforms and solutions.
 
 ## 🚀 About IntimaLabs
 
-IntimaLabs builds affiliate marketing ecosystems for the financial and retail sectors. Our mission is to create platforms that connect consumers with the best products and services through expert reviews and recommendations.
+IntimaLabs builds affiliate marketing ecosystems for the retail sector. Our mission is to create platforms that connect consumers with the best products and services through expert reviews and recommendations.
 
 ### Our Focus Areas
-- **Financial Services**: Affiliate platforms for credit cards, banking, and investment products
 - **Smart Home & Robotics**: Product reviews and recommendations for home automation
 - **Digital Marketing**: Building scalable affiliate marketing solutions
+- **Consumer Technology**: Expert insights on modern living solutions
 
-## 🌐 Our Platforms
+## 🌐 Our Platform
 
-### ApartmentRobots.com
-Home robotics and smart home technology reviews and recommendations.
+### Apartment Robots
+Smart home automation and robotics for modern living. Expert reviews, guides, and recommendations for home automation technology.
 
 **Website**: [apartmentrobots.com](https://www.apartmentrobots.com)
 
 ## 📅 Our Mission
 
-Building affiliate marketing ecosystems for the financial and retail sectors through expert content, product reviews, and consumer-focused recommendations.
+Building affiliate marketing ecosystems for the retail sector through expert content, product reviews, and consumer-focused recommendations.
 
 ## 🛠 Technical Stack
 
@@ -35,18 +35,19 @@ Building affiliate marketing ecosystems for the financial and retail sectors thr
 
 - ✅ Fully responsive design
 - ✅ Mobile-optimized experience
+- ✅ Dark mode support with system preference detection
 - ✅ Professional branding
-- ✅ Interactive roadmap
 - ✅ Social media integration
-- ✅ SEO optimized
+- ✅ SEO optimized with structured data
+- ✅ PWA manifest support
 
 ## 🔗 Connect With Us
 
-- **Website**: [intimalabs.com](https://www.intimalabs.com)
-- **Instagram**: [@intima_labs](https://www.instagram.com/intima_labs)
-- **Twitter/X**: [@IntimaLabs](https://twitter.com/IntimaLabs)
-- **LinkedIn**: [company/intimalabs](https://www.linkedin.com/company/intimalabs)
-- **Email**: [IntimaLabs@gmail.com](mailto:IntimaLabs@gmail.com)
+- **Website**: [intimalabs.github.io](https://intimalabs.github.io)
+- **Instagram**: [@intima_labs](https://www.instagram.com/intima_labs/)
+- **X (Twitter)**: [@IntimaLabs](https://x.com/IntimaLabs)
+- **LinkedIn**: [company/intimalabs](https://www.linkedin.com/company/intimalabs/)
+- **GitHub**: [@IntimaLabs](https://github.com/IntimaLabs)
 
 ## 📄 License
 
